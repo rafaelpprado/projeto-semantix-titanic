@@ -36,4 +36,36 @@ Inclui:
 ## ▶️ Como rodar
 ```bash
 pip install -r requirements.txt
-jupyter lab   # ou jupyter notebook
+jupyter lab  # ou jupyter notebook
+```
+
+## 📊 Resultados
+- **Cross Validation (10-fold)** → Accuracy média ~0.837  
+- **Holdout (20%)** → Accuracy 0.810, F1 0.757, Precision 0.746, Recall 0.768, AUC 0.858  
+- **Validação Repetida (5x3)** → Accuracy 0.8279 ±0.025, F1 0.772 ±0.033, AUC 0.878 ±0.020  
+
+O ensemble se mostrou estável e apresentou bom equilíbrio entre métricas.
+
+---
+
+## 📈 Visualizações
+- **Curva ROC** → qualidade das previsões probabilísticas.  
+- **Matriz de Confusão** → acertos e erros por classe.  
+- **PCA + K-Means** → análise exploratória dos perfis de passageiros.  
+
+As figuras são geradas automaticamente ao rodar o notebook.
+
+---
+
+## 📋 Requirements
+- pandas  
+- numpy  
+- matplotlib  
+- scikit-learn  
+- imbalanced-learn  
+- xgboost  
+
+---
+
+## ✍️ Autor
+Rafael Prado
